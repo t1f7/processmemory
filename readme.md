@@ -22,3 +22,9 @@ if (pointerMatrix != -1)
     pointerMatrix += 0x60;
 }
 ```
+
+Changes from original lib:
+
+1. Fixed memory scanning (now it is not attaching to process base module)
+2. Overloaded `PatternScan` to make limited by ms scans.
+3. Added `public Vector3 ReadVector3(long address)` just add your Vector3 to namespace or add `use your object.vector3` and uncomment it.
